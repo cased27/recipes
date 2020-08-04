@@ -97,7 +97,6 @@ function addIngElements() {
 			}
 		});
 		// const elementsLi = Array.from(document.querySelectorAll('.ingLis'));
-		// console.log(elementsLi);
 		// ingUl.innerHTML = elementsLi;
 		//console.log(ingUl);
 	});
