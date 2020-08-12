@@ -2,6 +2,8 @@ const allRecipes = [
 	{
 		name         : 'Tartar Sauce',
 		id           : 'tartarSauce',
+		value        : 'one',
+		keyword      : 'tSauce',
 		type         : [ 'sauce', 'seafood', 'fish' ],
 		ingredients  : [
 			'1 c mayonnaise',
@@ -20,6 +22,8 @@ const allRecipes = [
 	{
 		name         : 'Garlic Lime Seasoning',
 		id           : 'garlicSeasoning',
+		value        : 'two',
+		keyword      : 'limeSeasoning',
 		type         : [ 'mexican', 'shrimp tacos', 'seasoning', 'fish', 'seafood' ],
 		ingredients  : [
 			'1/2 tsp salt',
@@ -42,6 +46,8 @@ const allRecipes = [
 	{
 		name         : 'Creamy Cilantro Sauce',
 		id           : 'cilantroSauce',
+		value        : 'three',
+		keyword      : 'creamSauce',
 		type         : [ 'mexican', 'shrimp tacos', 'sauce', 'fish', 'seafood' ],
 		ingredients  : [
 			'1 c sour cream',
@@ -58,19 +64,20 @@ const allRecipes = [
 ];
 
 const elementBody = document.querySelector('body');
-const scriptTag = document.querySelector('script');
 
 function addElements() {
 	allRecipes.forEach((recipe) => {
 		const newDiv = document.createElement('div');
 		const newH3 = document.createElement('h3');
+		const divider = document.createElement('hr');
 		elementBody.append(newDiv);
+		newDiv.prepend(divider);
 		newDiv.append(newH3);
 		newH3.innerText = recipe.name;
-		newH3.insertAdjacentHTML('afterend', '<section class="link">Original Recipe</section>');
+		newH3.insertAdjacentHTML('afterend', `<section id="${recipe.keyword}">Original Recipe</section>`);
 		newH3.insertAdjacentHTML(
 			'afterend',
-			`<h4>Instructions</h4><section class="instructions"><ul id="${recipe.instructions}"></ul></section>`
+			`<h4>Instructions</h4><section class="instructions"><ul id="${recipe.value}"></ul></section>`
 		);
 		newH3.insertAdjacentHTML(
 			'afterend',
@@ -78,30 +85,41 @@ function addElements() {
 		);
 		const ingredients = recipe.ingredients;
 		const instructions = recipe.instructions;
-		const recipeId = document.querySelector(`#${recipe.id}`);
-		addIngredients(ingredients, recipeId);
-		addInstructions(instructions, recipeId);
+		const ingredientsList = document.querySelector(`#${recipe.id}`);
+		const instructionsList = document.querySelector(`#${recipe.value}`);
+		addIngredients(ingredients, ingredientsList);
+		addInstructions(instructions, instructionsList);
+
+		const links = recipe.link;
+		const linkAnchor = document.querySelector(`#${recipe.keyword}`);
+		addLinks(links);
 	});
 }
 
 addElements();
 
-const elementsH3 = elementBody.querySelectorAll('h3');
+function addLinks(linkAnchor) {
+	const newAnchor = document.createElement('a');
+	newAnchor.href = linkAnchor;
+	newAnchor.innerText = 'Original Recipe!!!';
+	console.log(newAnchor);
+	// links.append(newAnchor);
+}
 
-function addIngredients(ingredients, recipeId) {
+function addIngredients(ingredients, ingredientsList) {
 	ingredients.forEach((ingredient) => {
 		const newLis = document.createElement('li');
 		newLis.innerHTML = ingredient;
 		newLis.className = 'ingredient';
-		recipeId.append(newLis);
+		ingredientsList.append(newLis);
 	});
 }
 
-function addInstructions(instructions, recipeId) {
+function addInstructions(instructions, instructionsList) {
 	instructions.forEach((instruction) => {
 		const newLis = document.createElement('li');
 		newLis.innerHTML = instruction;
 		newLis.className = 'instruction';
-		recipeId.append(newLis);
+		instructionsList.append(newLis);
 	});
 }
