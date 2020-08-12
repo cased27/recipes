@@ -1,9 +1,9 @@
 const allRecipes = [
 	{
 		name         : 'Tartar Sauce',
-		id           : 'tartarSauce',
-		value        : 'one',
-		keyword      : 'tSauce',
+		id           : 'tSauce1',
+		value        : 'tSauce2',
+		keyword      : 'tSauce3',
 		type         : [ 'sauce', 'seafood', 'fish' ],
 		ingredients  : [
 			'1 c mayonnaise',
@@ -17,13 +17,13 @@ const allRecipes = [
 			'Remove the insides/seeds of the pickles (it makes them easier to finely chop)',
 			'Combine all ingredients & Serve!'
 		],
-		link         : 'https://natashaskitchen.com/tartar-sauce-recipe/'
+		link         : [ 'https://natashaskitchen.com/tartar-sauce-recipe/' ]
 	},
 	{
-		name         : 'Garlic Lime Seasoning',
-		id           : 'garlicSeasoning',
-		value        : 'two',
-		keyword      : 'limeSeasoning',
+		name         : 'Shrimp Taco Garlic Lime Seasoning',
+		id           : 'gSeasoning1',
+		value        : 'gSeasoning2',
+		keyword      : 'gSeasoning3',
 		type         : [ 'mexican', 'shrimp tacos', 'seasoning', 'fish', 'seafood' ],
 		ingredients  : [
 			'1/2 tsp salt',
@@ -41,13 +41,13 @@ const allRecipes = [
 			'Massage the mixture in a large bowl with the shrimp until well mixed in',
 			'Cook shrimp'
 		],
-		link         : 'https://www.garlicandzest.com/tangy-garlic-lime-shrimp-tacos/'
+		link         : [ 'https://www.garlicandzest.com/tangy-garlic-lime-shrimp-tacos/' ]
 	},
 	{
-		name         : 'Creamy Cilantro Sauce',
-		id           : 'cilantroSauce',
-		value        : 'three',
-		keyword      : 'creamSauce',
+		name         : 'Shrimp Taco Creamy Cilantro Sauce',
+		id           : 'cSauce1',
+		value        : 'cSauce2',
+		keyword      : 'cSauce3',
 		type         : [ 'mexican', 'shrimp tacos', 'sauce', 'fish', 'seafood' ],
 		ingredients  : [
 			'1 c sour cream',
@@ -59,7 +59,7 @@ const allRecipes = [
 			'1 tbsp very minced jalopeno'
 		],
 		instructions : [ 'Combine & Serve!' ],
-		link         : 'https://tasty.co/recipe/grilled-shrimp-tacos-with-creamy-cilantro-sauce'
+		link         : [ 'https://tasty.co/recipe/grilled-shrimp-tacos-with-creamy-cilantro-sauce' ]
 	}
 ];
 
@@ -74,7 +74,7 @@ function addElements() {
 		newDiv.prepend(divider);
 		newDiv.append(newH3);
 		newH3.innerText = recipe.name;
-		newH3.insertAdjacentHTML('afterend', `<section id="${recipe.keyword}">Original Recipe</section>`);
+		newH3.insertAdjacentHTML('afterend', `<section id="${recipe.keyword}"></section>`);
 		newH3.insertAdjacentHTML(
 			'afterend',
 			`<h4>Instructions</h4><section class="instructions"><ul id="${recipe.value}"></ul></section>`
@@ -85,25 +85,24 @@ function addElements() {
 		);
 		const ingredients = recipe.ingredients;
 		const instructions = recipe.instructions;
+		const links = recipe.link;
 		const ingredientsList = document.querySelector(`#${recipe.id}`);
 		const instructionsList = document.querySelector(`#${recipe.value}`);
+		const linkAnchor = document.querySelector(`#${recipe.keyword}`);
+		console.log(linkAnchor);
 		addIngredients(ingredients, ingredientsList);
 		addInstructions(instructions, instructionsList);
-
-		const links = recipe.link;
-		const linkAnchor = document.querySelector(`#${recipe.keyword}`);
-		addLinks(links);
+		addLinks(links, linkAnchor);
 	});
 }
 
 addElements();
 
-function addLinks(linkAnchor) {
+function addLinks(links, linkAnchor) {
 	const newAnchor = document.createElement('a');
-	newAnchor.href = linkAnchor;
-	newAnchor.innerText = 'Original Recipe!!!';
-	console.log(newAnchor);
-	// links.append(newAnchor);
+	newAnchor.href = links;
+	newAnchor.innerText = 'Original Recipe';
+	console.log(linkAnchor.append(newAnchor));
 }
 
 function addIngredients(ingredients, ingredientsList) {
