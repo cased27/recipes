@@ -1,13 +1,11 @@
-//id, value, keyword are used to specifically identify different values within each recipe in order for them to appear within their proper <section> on the HTML pg. Each needs to be different/unique from the next; code won't work if they are named the same!
-
 const allRecipes = [
 	{
-		name         : 'Tartar Sauce',
-		id           : 'ingredientsId1',
-		value        : 'instructionsId1',
-		keyword      : 'linkId1',
-		type         : [ 'sauce', 'seafood', 'fish' ],
-		ingredients  : [
+		name           : 'Tartar Sauce',
+		ingredientsId  : 'tSauce1',
+		instructionsId : 'tSauce2',
+		linkId         : 'tSauce3',
+		type           : [ 'sauce', 'seafood', 'fish' ],
+		ingredients    : [
 			'1 c mayonnaise',
 			'1 c finely chopped dill pickles',
 			'1 tbsp finely chopped fresh parsley or dill',
@@ -15,19 +13,19 @@ const allRecipes = [
 			'1 tsp sugar',
 			'1/4 tsp freshly ground black pepper'
 		],
-		instructions : [
+		instructions   : [
 			'Remove the insides/seeds of the pickles (it makes them easier to finely chop)',
 			'Combine all ingredients & Serve!'
 		],
-		link         : 'https://natashaskitchen.com/tartar-sauce-recipe/'
+		link           : 'https://natashaskitchen.com/tartar-sauce-recipe/'
 	},
 	{
-		name         : 'Shrimp Taco Garlic Lime Seasoning',
-		id           : 'ingredientsId2',
-		value        : 'instructionsId2',
-		keyword      : 'linkId2',
-		type         : [ 'mexican', 'shrimp tacos', 'seasoning', 'fish', 'seafood' ],
-		ingredients  : [
+		name           : 'Shrimp Taco Garlic Lime Seasoning',
+		ingredientsId  : 'gSeason1',
+		instructionsId : 'gSeason2',
+		linkId         : 'gSeason3',
+		type           : [ 'mexican', 'shrimp tacos', 'seasoning', 'fish', 'seafood' ],
+		ingredients    : [
 			'1/2 tsp salt',
 			'1/4 tsp black pepper',
 			'1 tsp ground cumin',
@@ -38,20 +36,20 @@ const allRecipes = [
 			'1 lime zested & juiced',
 			'1/4 c chopped cilantro - optional'
 		],
-		instructions : [
+		instructions   : [
 			'Combine all ingredients',
 			'Massage the mixture in a large bowl with the shrimp until well mixed in',
 			'Cook shrimp'
 		],
-		link         : 'https://www.garlicandzest.com/tangy-garlic-lime-shrimp-tacos/'
+		link           : 'https://www.garlicandzest.com/tangy-garlic-lime-shrimp-tacos/'
 	},
 	{
-		name         : 'Shrimp Taco Creamy Cilantro Sauce',
-		id           : 'ingredientsId3',
-		value        : 'instructionsId3',
-		keyword      : 'linkId3',
-		type         : [ 'mexican', 'shrimp tacos', 'sauce', 'fish', 'seafood' ],
-		ingredients  : [
+		name           : 'Shrimp Taco Creamy Cilantro Sauce',
+		ingredientsId  : 'cSauce1',
+		instructionsId : 'cSauce2',
+		linkId         : 'cSauce3',
+		type           : [ 'mexican', 'shrimp tacos', 'sauce', 'fish', 'seafood' ],
+		ingredients    : [
 			'1 c sour cream',
 			'3 tbsp fresh minced cilantro',
 			'1 tsp lime zest',
@@ -60,8 +58,8 @@ const allRecipes = [
 			'3 c mixed cabbage',
 			'1 tbsp very minced jalopeno'
 		],
-		instructions : [ 'Combine & Serve!' ],
-		link         : 'https://tasty.co/recipe/grilled-shrimp-tacos-with-creamy-cilantro-sauce'
+		instructions   : [ 'Combine & Serve!' ],
+		link           : 'https://tasty.co/recipe/grilled-shrimp-tacos-with-creamy-cilantro-sauce'
 	}
 ];
 
