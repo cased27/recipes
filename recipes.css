@@ -1,11 +1,30 @@
-.appear {
-	display: none;
+h1 {
+	font-family: 'Acme', sans-serif;
+	text-align: center;
 }
 
 h3 {
 	color: steelblue;
+	font-family: 'Architects Daughter', sans-serif;
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+h4 {
+	font-size: 1rem;
 }
 
-a {
-	color: black;
+.col-sm {
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.hidden {
+	display: none;
+}
+
+.appear {
+	display: block;
 }
