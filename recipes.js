@@ -30,7 +30,7 @@ function addElements() {
 		fullRecipeContainer.prepend(recipeTitle);
 		recipeBody.setAttribute('id', `${recipe.recipeBodyId}`);
 		recipeBody.className = 'hidden';
-		fullRecipeContainer.className = 'col-sm-5 col-lg-4';
+		fullRecipeContainer.className = 'col-sm-5';
 		recipeTitle.innerText = recipe.name;
 		recipeTitle.className = 'title';
 		recipeBody.insertAdjacentHTML('afterbegin', `<section id="${recipe.linkId}"></section>`);
