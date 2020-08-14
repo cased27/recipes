@@ -1,3 +1,16 @@
+// structure of each recipe addition:
+// {
+//     name:
+//     ingredientsId:
+//     instructionsId:
+//     linkId:
+//     recipeBodyId:
+//     type:
+//     ingredients:
+//     instructions:
+//     link:
+// 	}
+
 const allRecipes = [
 	{
 		name           : 'Tartar Sauce',

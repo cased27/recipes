@@ -1,4 +1,4 @@
-// import allRecipes from './recipeData.js';
+import allRecipes from './recipeData.js';
 // import { allRecipes } from './recipeData.js';
 
 const allRecipes = [
@@ -306,9 +306,9 @@ const allRecipes = [
 	{
 		name           : 'Sushi Rice',
 		ingredientsId  : 'sRice1',
-		instructionsId : 'sRice1',
-		linkId         : 'sRice1',
-		recipeBodyId   : 'sRice1',
+		instructionsId : 'sRice2',
+		linkId         : 'sRice3',
+		recipeBodyId   : 'sRice4',
 		type           : [ 'japanese', 'sushi', 'rice', 'fish' ],
 		ingredients    : [
 			'2 c sushi grade rice (or round/arborio if unavail)',
@@ -326,7 +326,7 @@ const allRecipes = [
 			'Add the vinegar mixture to the rice and fluff it into the rice using a large fork',
 			'Allow the rice to cool completely before using for sushi'
 		],
-		link           : ''
+		link           : 'https://www.lafujimama.com/sushi-rice-the-secret-behind-delicious-sushi/'
 	},
 	{
 		name           : 'Sushi Fish Prep',
@@ -345,7 +345,7 @@ const allRecipes = [
 			'For salmon, cut against the grain of the flesh lines',
 			'For ahi tuna, cut off rounded chunk and filet the rest'
 		],
-		link           : ''
+		link           : 'https://www.youtube.com/watch?time_continue=96&v=ykk4dHMsSz4&feature=emb_title'
 	},
 	{
 		name           : 'Sushi Rolls',
@@ -374,7 +374,7 @@ const allRecipes = [
 			'when you get to the end of the sushi paper, dip your finger in the water bowl and dab the top of the sushi paper with the water to slightly wet it along the top. Then roll the rest of your sushi roll onto the wetted paper to seal the roll',
 			'To cut, first you cut the roll in half. Then you stack the 2 rolls up vertically (ie in rows) and cut them together to your preferred size'
 		],
-		link           : ''
+		link           : 'https://www.youtube.com/watch?v=yGG01tj9wi4&t=163s'
 	}
 ];
 // Alphabetize Recipes
