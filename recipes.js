@@ -58,6 +58,8 @@ function addElements() {
 		//adding Event Listener to toggle recipes upon click of title
 		recipeTitle.addEventListener('click', function() {
 			recipeBody.classList.toggle('appear');
+			recipeBody.classList.remove('col-sm-5');
+			fullRecipeContainer.classList.toggle('col-sm-12');
 		});
 	});
 }
@@ -80,3 +82,20 @@ function addLinks(links, linkAnchor) {
 }
 
 addElements();
+
+//add animation
+// let start = Date.now();
+
+// let timer = setInterval(function() {
+// 	let timePassed = Date.now() - start;
+// 	if (timePassed >= 1000) {
+// 		clearInterval(timer);
+// 		return;
+// 	}
+// 	draw(timePassed);
+// }, 20);
+
+// function draw(timePassed) {
+// 	mixerL.style.left = timePassed / 5 + 'px';
+// 	mixerR.style.right = timePassed / 5 + 'px';
+// }
