@@ -88,8 +88,10 @@ addElements();
 
 // let timer = setInterval(function() {
 // 	let timePassed = Date.now() - start;
-// 	if (timePassed >= 1000) {
+// 	let viewportWidth = window.innerWidth;
+// 	if (timePassed >= 150 || viewportWidth <= 930 + 'px') {
 // 		clearInterval(timer);
+// 		console.log(timePassed, viewportWidth);
 // 		return;
 // 	}
 // 	draw(timePassed);
