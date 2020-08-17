@@ -30,7 +30,7 @@ function addElements() {
 		fullRecipeContainer.prepend(recipeTitle);
 		recipeBody.setAttribute('id', `${recipe.recipeBodyId}`);
 		recipeBody.className = 'hidden';
-		fullRecipeContainer.className = 'col-sm-5 col-lg-4';
+		fullRecipeContainer.className = 'col-sm-5';
 		recipeTitle.innerText = recipe.name;
 		recipeTitle.className = 'title';
 		recipeBody.insertAdjacentHTML('afterbegin', `<section id="${recipe.linkId}"></section>`);
@@ -58,6 +58,8 @@ function addElements() {
 		//adding Event Listener to toggle recipes upon click of title
 		recipeTitle.addEventListener('click', function() {
 			recipeBody.classList.toggle('appear');
+			recipeBody.classList.remove('col-sm-5');
+			fullRecipeContainer.classList.toggle('col-sm-12');
 		});
 	});
 }
@@ -80,3 +82,22 @@ function addLinks(links, linkAnchor) {
 }
 
 addElements();
+
+//add animation
+// let start = Date.now();
+
+// let timer = setInterval(function() {
+// 	let timePassed = Date.now() - start;
+// 	let viewportWidth = window.innerWidth;
+// 	if (timePassed >= 150 || viewportWidth <= 930 + 'px') {
+// 		clearInterval(timer);
+// 		console.log(timePassed, viewportWidth);
+// 		return;
+// 	}
+// 	draw(timePassed);
+// }, 20);
+
+// function draw(timePassed) {
+// 	mixerL.style.left = timePassed / 5 + 'px';
+// 	mixerR.style.right = timePassed / 5 + 'px';
+// }

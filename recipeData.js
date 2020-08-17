@@ -100,7 +100,7 @@ const allRecipes = [
 		instructions   : [
 			'Mix all ingredients in a large bowl thoroughly',
 			'Let stand for 30 min',
-			'Preheat oven to 350F',
+			'Preheat oven to 350ºF',
 			'Place foil on baking sheet',
 			'Place meatballs in med-sized balls onto baking sheet',
 			'Bake for 25 min'
@@ -126,7 +126,7 @@ const allRecipes = [
 			'1 baguette/ bread of choice'
 		],
 		instructions   : [
-			'Preheat oven to 400F',
+			'Preheat oven to 400ºF',
 			'Place the garlic, cut side down, in a large roasting pan.',
 			'Add the butter, oil, a pinch of salt, a couple of twists of black pepper, the honey, rosemary, and bay leaves',
 			'Bake for 30-35 min',
@@ -190,7 +190,7 @@ const allRecipes = [
 			'fresh parsley, chopped (optional garnish)'
 		],
 		instructions   : [
-			'Preheat oven to 350F',
+			'Preheat oven to 350ºF',
 			'Line baking sheet with foil and grease with olive oil/butter',
 			'lay lemon slices in center of the foil (under the fish)',
 			'season both sides of salmon with salt & pepper',
@@ -265,7 +265,7 @@ const allRecipes = [
 			'Dust hands with flour and form the dough into a round ball',
 			'Transfer into oiled bowl and roll around bowl to coat with oil',
 			'Cover bowl with plastic wrap and place in a warm place for 30 min for dough to rise (it should double in size)',
-			'Preheat oven to 425F',
+			'Preheat oven to 425ºF',
 			'Gently deflate pizza and knead it breifly, only 3-5 times',
 			'add parchment paper to baking sheet',
 			'work dough out into an even, flat surface on parchment paper',
@@ -304,7 +304,7 @@ const allRecipes = [
 			'Place kneaded dough into a large floured bowl with a towel over the top, then sprinkle flour and let it rise for 12 hours.',
 			'Place risen dough onto a floured board and knead for a few minutes.',
 			'Place it into a floured proofing basket or a medium bowl, sprinkle flour and let it rise for another 4 hours.',
-			'Preheat oven to 480°F(250°C).',
+			'Preheat oven to 480ºF(250ºC).',
 			'Flip the dough onto a parchment paper, and transfer the dough and paper into a large cast- iron dutch oven.',
 			'Score the top of the bread.',
 			'Place the lid on top and bake for 30 minutes.',
@@ -407,12 +407,66 @@ const allRecipes = [
 			'Add parchment paper to the baking sheet.',
 			'Roll dough flat(and optionally drizzle with olive oil',
 			'If the dough is pulling back, let rest for 15 min before continuing',
-			'Preheat oven to 450F',
+			'Preheat oven to 450ºF',
 			'Add sauce to the dough and bake for 5-7 min',
 			'Remove from oven, add cheese and other toppings, then continue baking for 7-10 min more',
 			''
 		],
 		link           : 'https://www.kingarthurbaking.com/recipes/sourdough-pizza-crust-recipe'
+	},
+	{
+		name           : 'Breakfast Burrito',
+		ingredientsId  : 'bBurr1',
+		instructionsId : 'bBurr2',
+		linkId         : 'bBurr3',
+		recipeBodyId   : 'bBurr4',
+		type           : [ 'mexican', 'breakfast' ],
+		ingredients    : [
+			'crispy hash browns',
+			'eggs (not seasoned)',
+			'potato chips (salted, ruffles salt & pepper)',
+			'sausage',
+			'bacon',
+			'avocado',
+			'sour cream',
+			'cheese',
+			'toasted tortilla',
+			'salsa'
+		],
+		instructions   : [
+			'cook the hash browns until crispy, set aside',
+			'cook the sausage and bacon, set aside',
+			'cook the eggs, without seasoning, using some of the sausage/bacon grease, set aside',
+			'slice avocado',
+			'add all ingredients to tortilla, wrap tortilla, and toast the wrapped burrito on the skillet until browned and crispy',
+			"This is Derek's recipe but the link is for another very good recipe"
+		],
+		link           : 'https://www.onceuponachef.com/recipes/breakfast-burritos.html'
+	},
+	{
+		name           : 'Coleslaw',
+		ingredientsId  : 'slaw1',
+		instructionsId : 'slaw2',
+		linkId         : 'slaw3',
+		recipeBodyId   : 'slaw4',
+		type           : [ 'side', 'salad' ],
+		ingredients    : [
+			'purple cabbage',
+			'dill',
+			'finely chopped dill pickles',
+			'Lemon',
+			'salt & pepper',
+			'garlic',
+			'paprika / red pepper flakes',
+			'pickle juice',
+			'mayonnaise / sour cream',
+			'diced jalopeno'
+		],
+		instructions   : [
+			'prepare and mix the ingredients well',
+			"This is Derek's recipe but the link is for another very good recipe"
+		],
+		link           : 'https://www.allrecipes.com/recipe/240784/easy-coleslaw-dressing/'
 	}
 ];
 
