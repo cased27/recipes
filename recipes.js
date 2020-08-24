@@ -1,5 +1,3 @@
-import allRecipes from './recipeData.js';
-
 // Alphabetize Recipes
 allRecipes.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -99,11 +97,15 @@ function addClick(recipeTitle, recipeBody, fullRecipeContainer) {
 
 addElements();
 
-// add search element (in progress...)
+// add search feature
 
 const recipes = [];
+// let totalRecipeList = Object.values(allRecipes).map(values);
+// console.log(totalRecipeList);
+
 allRecipes.forEach((recipe) => {
-	return recipes.push(recipe);
+	let value = Object.values(recipe);
+	recipes.push(value);
 });
 console.log(recipes);
 
@@ -113,22 +115,3 @@ function findMatches(wordToMatch, recipes) {
 		return item.recipe.match(regex);
 	});
 }
-
-//add animation
-// let start = Date.now();
-
-// let timer = setInterval(function() {
-// 	let timePassed = Date.now() - start;
-// 	let viewportWidth = window.innerWidth;
-// 	if (timePassed >= 150 || viewportWidth <= 930 + 'px') {
-// 		clearInterval(timer);
-// 		console.log(timePassed, viewportWidth);
-// 		return;
-// 	}
-// 	draw(timePassed);
-// }, 20);
-
-// function draw(timePassed) {
-// 	mixerL.style.left = timePassed / 5 + 'px';
-// 	mixerR.style.right = timePassed / 5 + 'px';
-// }

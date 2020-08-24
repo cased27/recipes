@@ -467,7 +467,81 @@ const allRecipes = [
 			"This is Derek's recipe but the link is for another very good recipe"
 		],
 		link           : 'https://www.allrecipes.com/recipe/240784/easy-coleslaw-dressing/'
+	},
+	{
+		name           : 'Texas Queso Dip',
+		ingredientsId  : 'tqDip1',
+		instructionsId : 'tqDip2',
+		linkId         : 'tqDip3',
+		recipeBodyId   : 'tqDip4',
+		type           : [ 'mexican', 'chips', 'dip', 'cheese' ],
+		ingredients    : [
+			'1 block velveeta cheese',
+			'2 cans rotel, chilled',
+			'1 can black beans (include liquid)',
+			'milk',
+			'avocado, sliced',
+			'sour cream'
+		],
+		instructions   : [
+			'Cut the block of cheese into 1/2" cubes',
+			'Pour in 1 can of rotel with juice. Drain the other can and add to mixture',
+			'Add 1 can  black beans with juice',
+			'Mix it all together. If too thick, add milk to thin it out',
+			'Once melted, add diced avocado and a touch of sour cream (to taste)',
+			"This is Lauren's recipe. The link is for a highly recommended similar recipe"
+		],
+		link           : 'https://www.thekitchn.com/recipe-rotel-famous-queso-dip-recipes-from-the-kitchn-208398'
+	},
+	{
+		name           : 'Cookies: Brown Butter Salties',
+		ingredientsId  : 'bbsalt1',
+		instructionsId : 'bbsalt2',
+		linkId         : 'bbsalt3',
+		recipeBodyId   : 'bbsalt4',
+		type           : [ 'dessert', 'cookies', 'sweets' ],
+		ingredients    : [
+			'3/4 c butter',
+			'1/2 c lightly packed brown sugar',
+			'1 tsp vanilla',
+			'1 1/3 c flour',
+			'1 tsp baking powder',
+			'pinch of coarse sea salt',
+			'handful of sliced almonds for decoration (optional)'
+		],
+		instructions   : [
+			'Preheat the oven to 325ºF. Line a baking sheet with parchment paper',
+			'In saucepan over medium heat, melt butter until it starts to brown (be careful not to burn it; let it melt, brown, and the foam subside to form a nutty color)',
+			'Pour butter into medium bowl and stir in brown sugar and vanilla.',
+			'In a separate small bowl, whisk together the flour and baking powder',
+			'With a spoon, stir four mixture into butter mixture until well combined',
+			'Drop dough onto baking sheet, sprinkle with sea salt and lightly press it into the top of the cookies. Add almonds to the top of cookies',
+			'Bake for 12 min'
+		],
+		link           : 'https://wakeandbakemama.com/2018/06/11/brown-butter-salties/'
+	},
+	{
+		name           : 'Sausage Kale Pasta',
+		ingredientsId  : 'skalepasta1',
+		instructionsId : 'skalepasta2',
+		linkId         : 'skalepasta3',
+		recipeBodyId   : 'skalepasta4',
+		type           : [ 'pasta', 'italian', 'sausage', 'kale' ],
+		ingredients    : [
+			'1 block Pecornino or Parmesan Cheese',
+			'1 package Italian sausage',
+			'1 package Kale',
+			'16 oz heavy cream',
+			'1 c chicken broth',
+			'1/2 bag quinoa + rice pasta'
+		],
+		instructions   : [
+			'Cook pasta and set aside',
+			'Cook sausage',
+			'add 1/2 the cream and all the broth to the sausage. Lower heat to simmer until sausage thickens (approx 7-10 min)',
+			'add 1/2 - 3/4 of the bag of kale. Simmer until kale is limp (use lid)',
+			'Add pasta and mix together. Add desired amount of cheese'
+		],
+		link           : 'https://kalynskitchen.com/recipe-for-pasta-with-hot-italian/'
 	}
 ];
-
-export default allRecipes;
