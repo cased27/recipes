@@ -46,7 +46,7 @@ function addRecipeContainer(fullRecipeContainer, recipeBody, recipeTitle) {
 	elementBody.append(fullRecipeContainer);
 	fullRecipeContainer.append(recipeBody);
 	fullRecipeContainer.prepend(recipeTitle);
-	fullRecipeContainer.className = 'col-sm-5';
+	fullRecipeContainer.className = 'col-sm-5 recipeContainer';
 }
 
 function addRecipeTitle(recipeTitle, recipe) {
@@ -99,19 +99,36 @@ addElements();
 
 // add search feature
 
-const recipes = [];
-// let totalRecipeList = Object.values(allRecipes).map(values);
-// console.log(totalRecipeList);
+// const recipeType = [];
 
-allRecipes.forEach((recipe) => {
-	let value = Object.values(recipe);
-	recipes.push(value);
-});
-console.log(recipes);
+// allRecipes.forEach((recipe) => {
+// 	return recipeType.push(...recipe.type);
+// });
 
-function findMatches(wordToMatch, recipes) {
-	return recipes.filter((item) => {
-		const regex = RegExp(wordToMatch, 'gi');
-		return item.recipe.match(regex);
+function findMatches(wordToMatch, allRecipes) {
+	return allRecipes.filter((recipe) => {
+		//recipe type or name matches search word
+		const regex = new RegExp(wordToMatch, 'gi');
+		return recipe.name.match(regex);
 	});
 }
+
+function displayMatches() {
+	const matchArray = findMatches(this.value, allRecipes);
+	const html = matchArray
+		.map((recipe) => {
+			return `
+		<li>
+			<span class="name"> ${recipe.name}</span
+		</li>
+		`;
+		})
+		.join('');
+	suggestions.innerHTML = html;
+}
+
+const searchInput = document.querySelector('.search');
+const suggestions = document.querySelector('.suggestions');
+
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
