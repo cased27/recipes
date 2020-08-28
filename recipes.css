@@ -116,8 +116,13 @@ span.population {
 
 .hidden {
 	display: none;
+	border: none !important;
 }
 
 .appear {
 	display: block;
+}
+
+.hl {
+	background: #ffc600;
 }

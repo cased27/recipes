@@ -99,11 +99,7 @@ addElements();
 
 // add search feature
 
-// const recipeType = [];
-
-// allRecipes.forEach((recipe) => {
-// 	return recipeType.push(...recipe.type);
-// });
+//need to add the 'recipe.type' search (currently doesn't allow i think bc it's a nested array)
 
 function findMatches(wordToMatch, allRecipes) {
 	return allRecipes.filter((recipe) => {
@@ -117,18 +113,18 @@ function displayMatches() {
 	const matchArray = findMatches(this.value, allRecipes);
 	const html = matchArray
 		.map((recipe) => {
-			return `
-		<li>
-			<span class="name"> ${recipe.name}</span
-		</li>
-		`;
+			const regex = new RegExp(this.value, 'gi');
+			if (`${this.value}` !== regex) {
+				recipeContainer.classList.add('hidden');
+			}
 		})
 		.join('');
-	suggestions.innerHTML = html;
+	recipeContainer.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.search');
-const suggestions = document.querySelector('.suggestions');
+const recipeContainer = document.querySelector('.recipeContainer');
+const recipeTitle = document.querySelector('h3');
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
