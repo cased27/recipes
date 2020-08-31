@@ -18,8 +18,9 @@ contentContainer.append(rowContainer);
 
 // adding structure & elements with content
 
-function addElements() {
-	allRecipes.forEach((recipe) => {
+function addElements(recipes) {
+	rowContainer.innerHTML = '';
+	recipes.forEach((recipe) => {
 		const fullRecipeContainer = document.createElement('div'); //contains all recipe info & the title
 		const recipeTitle = document.createElement('h3');
 		const recipeBody = document.createElement('div'); // contains all recipe info NOT the title
@@ -95,11 +96,9 @@ function addClick(recipeTitle, recipeBody, fullRecipeContainer) {
 	});
 }
 
-addElements();
+addElements(allRecipes);
 
 // add search feature
-
-//need to add the 'recipe.type' search (currently doesn't allow i think bc it's a nested array)
 
 function findMatches(wordToMatch, allRecipes) {
 	return allRecipes.filter((recipe) => {
@@ -111,20 +110,10 @@ function findMatches(wordToMatch, allRecipes) {
 
 function displayMatches() {
 	const matchArray = findMatches(this.value, allRecipes);
-	const html = matchArray
-		.map((recipe) => {
-			const regex = new RegExp(this.value, 'gi');
-			if (`${this.value}` !== regex) {
-				recipeContainer.classList.add('hidden');
-			}
-		})
-		.join('');
-	recipeContainer.innerHTML = html;
+	addElements(matchArray);
 }
 
 const searchInput = document.querySelector('.search');
-const recipeContainer = document.querySelector('.recipeContainer');
-const recipeTitle = document.querySelector('h3');
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
