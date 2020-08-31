@@ -47,7 +47,7 @@ function addRecipeContainer(fullRecipeContainer, recipeBody, recipeTitle) {
 	elementBody.append(fullRecipeContainer);
 	fullRecipeContainer.append(recipeBody);
 	fullRecipeContainer.prepend(recipeTitle);
-	fullRecipeContainer.className = 'col-sm-5 recipeContainer';
+	fullRecipeContainer.className = 'col-sm-5';
 }
 
 function addRecipeTitle(recipeTitle, recipe) {
