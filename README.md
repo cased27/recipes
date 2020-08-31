@@ -6,5 +6,5 @@ Purpose:
 * a simple recipe webpage with no frills; no ads, no videos, no pics, no stories. Just the stuff you need to make the dish.
 
 Outcome:
-Although the page, in all respects, is quite boring I really wanted to keep it super simple and straight forward as far as the appearance came. I was able to reinforce a lot of the JS skills I've been learning in my course with Colt Steele and now I have a place to access my recipes easy.
+Although the page is quite boring I really wanted to keep it super simple and straight forward as far as the appearance came. In addition, my main focus was to reinforce JS skills and organize my scattered recipes. I was able to accomplish both my goals with this project.
 
