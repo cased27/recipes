@@ -190,7 +190,7 @@ const allRecipes = [
 			'fresh parsley, chopped (optional garnish)'
 		],
 		instructions   : [
-			'Preheat oven to 350ºF',
+			'Preheat oven to 350F',
 			'Line baking sheet with foil and grease with olive oil/butter',
 			'lay lemon slices in center of the foil (under the fish)',
 			'season both sides of salmon with salt & pepper',
