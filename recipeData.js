@@ -13,6 +13,45 @@
 
 const allRecipes = [
 	{
+    name: 'Chicken / Turkey Pot Pie',
+    ingredientsId: 'pPie1',
+		instructionsId: 'pPie2',
+		linkId: 'pPie3',
+		recipeBodyId: 'pPie4',
+    type: ['leftovers', 'dinner'],
+		ingredients: [
+			'2c frozen peas & carrots',
+			'2c frozen green beans',
+			'1c sliced celery',
+			'2/3c butter',
+			'2/c chopped onion',
+			'2/3c flour',
+			'1 tsp salt',
+			'1 tsp black pepper',
+			'1/2 tsp celery seed',
+			'1/2 tsp onion powder',
+			'1/2 tsp italian seasoning',
+			'1 3/4 c chicken broth',
+			'1 1/3 c milk',
+			'4c cubed cooked meat',
+			'4 (9") unbaked pie crusts (Pillsbury roll, bottom only, in souffle ramekins'
+	],
+		instructions: [
+			'Preheat oven to 425',
+			'Place peas, carrots, green beans and celery into saucepan',
+			'Cover with water, bring to boil, an dsimmer over med-low heat until celery is tender (8 min)',
+			'Drain veggies into colander and set aside',
+			'Melt butter in saucepan over med heat',
+			'Cook onion until translucent (about 5 min)',
+			'Stir in 2/3c flour, salt, pepper, celery seed, onion powder, Italian seasoning. Slowly whisk in chicken broth and milk until mixture comes to simmer and thickens',
+			'Remove from heat, stir the cooked veggies and meat into filling until well combined',
+			'Fit the baking dishes with the pie crust and spoon filling into each. Roll the edge to seal (no need to cover the top)',
+			'Bake 30-35 min or until golden brown and filling is bubbly',
+			'Place aluminum foil on top to prevent the crust from over-cooking'
+	],
+		link: 'https://www.allrecipes.com/recipe/215447/dads-leftover-turkey-pot-pie/',
+	},
+{
     name: 'Cheese Souffle',
     ingredientsId: 'cSouffle1',
 		instructionsId: 'cSouffle2',
