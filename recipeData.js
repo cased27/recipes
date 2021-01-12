@@ -69,6 +69,7 @@ const allRecipes = [
 			'1/4 tsp cream of tartar'
 	],
 		instructions: [
+			'Preheat to 375',
 			'Generously butter 2-quart souffle dish or 6 1.25-cup souffle dishes (if using small dishes separate them 2" apart in baking pan)',
 			'Melt butter in pot over med heat',
 			'Add flour, stir until smooth and bubbling',
