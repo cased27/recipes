@@ -13,6 +13,95 @@
 
 const allRecipes = [
 	{
+    name: 'Cheese Souffle',
+    ingredientsId: 'cSouffle1',
+		instructionsId: 'cSouffle2',
+		linkId: 'cSouffle3',
+		recipeBodyId: 'cSouffle4',
+    type: ['french', 'cheese', 'danish'],
+		ingredients: [
+			'1/4 c butter',
+			'1/4 c flour',
+			'1 1/4 c milk',
+			'1/4 tsp cayenne',
+			'1/4 tsp salt',
+			'1 1/2 c shredded cheese (sharp cheddar, pepper-jack, gruyere, parmesan; mix and match)',
+			'6 lrg eggs, separated',
+			'1/4 tsp cream of tartar'
+	],
+		instructions: [
+			'Generously butter 2-quart souffle dish or 6 1.25-cup souffle dishes (if using small dishes separate them 2" apart in baking pan)',
+			'Melt butter in pot over med heat',
+			'Add flour, stir until smooth and bubbling',
+			'Stir in milk, cayenne, and salt. Continue stirring until sauce boils and thickens (3-4 min) and remove from heat',
+			'Add cheese and stir until melted',
+			'Add egg yoks (yellows) an dstir until blended and smooth',
+			'In mixer whisk egg whites, add cream of tartar until short, stiff, moist peaks form',
+			'With flexible spatula, fold 1/3 of cheese sauce into whites until well blended',
+			'Add remaining cheese sauce and gently fold in until blended',
+			'Scrape batter into prepared souffle dish. If more than 3/4 full, use foil collar',
+			'Draw a circle on the surface of batter with tip of knife  (about 1" from rim) to help form a crown while baking - if desired',
+			'Bake at 375 until top is golden or deep brown and cracks look fairly dry (25-30 min for small dishes)'
+	],
+		link: 'https://www.sunset.com/recipe/classic-cheese-souffl'
+		},
+	{
+    name: "Chicken Khoa Soi PASTE",
+    ingredientsId: "kSoi1",
+		instructionsId: "kSoi2",
+    linkId: "kSoi3",
+    recipeBodyId: "kSoi4",
+    type: ['soup', 'thai', 'chiang mai'],
+		ingredients: [
+			'4 large dried New Mexico or guajillo chiles (stemmed, halved, seeded)',
+			'2 med shallots, halved',
+			'8 garlic cloves',
+			'1 2" piece ginger (peeled, sliced)',
+			'1/4 cup chopped cilantro stems',
+			'1 tbsp ground coriander',
+			'1 tbsp ground turmeric',
+			'1 tsp curry powder'
+	],
+		instructions: [
+			'Place chilis in pot of boiling water, cover, and let soak until softened (25-30 min; do not cook, just keep water hot)',
+			'Drain chilis, reserving liquid',
+			'Puree chilis, shallots, garlic, ginger, cilantro stems, coriander, turmeric, curry powder, and 2 tbps (or more) of chili soaking liquid until smooth'
+	],
+		link: 'https://www.bonappetit.com/recipe/chicken-khao-soi'
+	},
+	{
+		name: "Chicken Khoa Soi SOUP",
+		ingredientsId: "kSoiSoup1",
+		instructionsId: "kSoiSoup2",
+		linkId: "kSoiSoup3",
+		recipeBodyId: "kSoiSoup4",
+		type: ['soup', 'thai', 'chiang mai'],
+		ingredients: [
+			'2 tbsp vegetable oil',
+			'2 14-oz unsweetened coconut milk cans',
+			'2 cups low-sodium chicken broth',
+			'1.5 lbs skinless, boneless chicken thighs (halved lengthwise)',
+			'1 lb chinese egg noodles',
+			'3 tbsp (or more) fish sauce',
+			'1 tbsp light brown sugar',
+			'salt (to taste)',
+			'sliced red onioni, bean sprouts, cilantro sprigs, crispy fried onions/shallots, chili oil, lime wedges (for serving)'
+	],
+		instructions: [
+			'Heat oil in large heavy pot over med heat. Add paste.',
+			'Cook, stirring constantly, until slightly darkened (4-6 min)',
+			'Add coconut milk and broth',
+			'Bring to boil and add chicken',
+			'Reduce heat and simmer until chicken is fork-tender (20-25 min)',
+			'Transfer chicken to plate, let cool slightly, and shred',
+			'Cook noodles according to package directions',
+			'Add chicken back to broth with 3 tbsp fish sauce and sugar',
+			'Season with salt (or more fish sauce if needed)',
+			'Serve with desired toppings'
+	],
+			link: 'https://www.bonappetit.com/recipe/chicken-khao-soi'
+	},
+	{
 		name           : 'Tartar Sauce',
 		ingredientsId  : 'tSauce1',
 		instructionsId : 'tSauce2',
